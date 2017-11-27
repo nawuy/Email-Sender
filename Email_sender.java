@@ -36,7 +36,7 @@ if (opening_window == JOptionPane.CLOSED_OPTION) System.exit(0);
 
 // ------------ BEGINNING READING data from "assignments.csv" ---------------	
 
-String assignments_db = "/Users/nahuelpregot/Dropbox/laney_college/cis_36a/Final Project/email_sender/src/email_sender/assignments.csv";
+String assignments_db = "/The/Directory/of/your/csv/file/email_list.csv/assignments.csv"; // paste here the directory of your csv file
 File file_assignments_db = new File(assignments_db);
 ArrayList<String> lines_of_assignments = new ArrayList<String>();
 
@@ -68,7 +68,7 @@ md_lines.addAll(Arrays.asList(line1, line2, line3, line4));
 
 // ------------ BEGINNING READING data from "email_list.csv" ---------------- 
 
-String email_db = "/Users/nahuelpregot/Dropbox/laney_college/cis_36a/Final Project/email_sender/src/email_sender/email_list.csv";
+String email_db = "/The/Directory/of/your/csv/file/email_list.csv"; // paste here the directory of your csv file
 File file_email_db = new File(email_db);
 ArrayList<String> lines_of_email_list = new ArrayList<String>();
 
@@ -138,8 +138,8 @@ n_of_line++;
 
 // ------------ BEGINNING email sender --------------------------------------
 
-final String username = "nahuel.java.program@gmail.com"; // The account used to send the email
-final String password = "Angela2015"; // The password of the gmail account
+final String username = "your.email.account@gmail.com"; // The account used to send the email
+final String password = "**********"; // The password of the gmail account
 
 Properties props = new Properties();
 props.put("mail.smtp.auth", "true");
